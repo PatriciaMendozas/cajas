@@ -1,0 +1,14 @@
+*{
+	outline:1px solid rgba(255,0,0,0.3);
+}
+.encuadre{
+	width: 200px;height: 200px; border:20px solid red; background: blue;
+}
+.cuadro{
+	display: inline-block; background-color:pink ;width: 200px; height: 200px;
+  	transition: transform 300ms cubic-bezier(0, 0.47, 0.32, 1.97);
+  	pointer-events: none;
+}
+.encuadre.clicked .cuadro{
+  transform: translate(200px, 150px) rotate(20deg);
+}

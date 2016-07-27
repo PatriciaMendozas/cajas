@@ -1,0 +1,53 @@
+<html>
+<head>
+      <script language="javascript">
+ 	var imagenes=new Array()
+ 
+	imagenes[0]=new Image (300,400);
+	imagenes[0].src="images/andamio1.gif"
+	imagenes[1]=new Image (300,400);
+	imagenes[1].src="images/andamio2.gif"
+	cont=0
+	function presImagen()
+	{
+		if (document.all){
+			document.getElementById('imagenes').filters.blendTrans.apply() 
+			document.getElementById('imagenes').src=imagenes[cont].src 
+			document.getElementById('imagenes').filters.blendTrans.play()
+		}
+		else
+		{
+			document.images.foto.src = imagenes[cont].src
+		}
+		if (cont < imagenes.length-1)
+		{cont ++}
+		else
+		{cont=0}
+		tiempo=window.setTimeout('presImagen()',5000)
+		//cada 5000 milisegundos (5 seg.) cambia la imagen.
+		//cambia la cantidad por el tiempo que quieras que transcurra entre imagen e imagen
+	}
+ 
+	</script>
+ 
+	<style type="text/css">
+	  A:link {color:blue}
+        A:visited {color:blue}
+	  A:hover {color:red;}
+      </style>
+	<title>INICIO</title>
+</head>
+<body style="height:100%;width:100%;background-color:white;color:black;" onLoad="presImagen()">
+<table style="width:100%;height:100%;text-align:left;" border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="text-align:center; background-color:white;width:10%;height:20%;">
+        <img id="foto1" style="width:28.75%;height:100%;" src="image/banner.png" style="filter:blendTrans(duration=3)">
+        <img id="foto2" style="width:28.75%;height:100%;" src="image/banner2.png" style="filter:blendTrans(duration=3)">
+        <img id="foto3" style="width:28.75%;height:100%;" src="image/banner3.png" style="filter:blendTrans(duration=3)">
+      </td>
+	</tr>
+</tbody>
+</table>
+</body>
+</html>
