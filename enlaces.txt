@@ -1,2 +1,7 @@
 https://www.youtube.com/watch?v=n1AB2fljySc
 animate mover cuadrado
+http://spyrestudios.com/29-website-designs-using-bold-color-schemes/
+imagen centrada
+position absolute o relativa
+luego arriba abajo derecha 0 y margin auto
+

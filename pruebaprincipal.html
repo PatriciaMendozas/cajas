@@ -22,7 +22,7 @@
 </head>
 <body onLoad="setInterval('cambiar()',1200);">
 	<div class="contenedor">
-		<img id="img" src="herida.png" alt="#" >
+		<img id="img" src="herida2.png" alt="#" >
 	</div>
 	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -32,7 +32,7 @@
 	function cambiar(){
 		do{
 		x=x+150;
-		$("img").css("transform","translate3d(0px,"+x+"px, 0px)");
+		$("img").css("transform","translate3d( "+x+"px, 0px,0px)");
 		if (x==0) {
 			x=-450;
 		}

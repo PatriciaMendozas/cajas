@@ -1,8 +1,13 @@
-*{
+/**{
 	outline:1px solid rgba(255,0,0,1);
-}
-body{background-image:url("../image/fondo.jpg");}
-.contenedor{background-color:#2B3A3F; margin:0% 5% 0%;}
+}*/
 
 p{color: #fff; font-weight: bolder;}
 img{width: 100%;}
+
+
+.content {
+  margin:20px;
+  padding-top:40px;
+}
+
